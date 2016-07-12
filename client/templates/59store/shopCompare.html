@@ -1,0 +1,37 @@
+<template name="shopCompare">
+	<div id="shopCompare" class="mui-page">
+        <div class="mui-page-content">
+		<button type="button" class="mui-btn mui-btn-primary" id="clearBtn">清空</button>
+		<button type="button" class="mui-btn mui-btn-primary" id="compareBtn">对比</button>
+		<ul class="mui-table-view">
+			{{#each list}}
+			<li class="mui-table-view-cell">
+			<div class="">
+				<h4 class="">
+					<a href="{{pathFor route='item'}}">{{name}}</a>
+					<span class="mui-icon mui-icon-closeempty shop_delete" ></span>
+					<input type="checkbox" class="shop_chx" id="{{id}}"  style="float:right;"/>
+				</h4>
+			</div>
+			</li>
+			{{/each}}
+		</ul>
+		<ul class="mui-table-view" id="itemsTpl">
+			{{#each items}}
+			<li class="mui-table-view-cell">
+				{{#if isBoth num tag}}
+				<span>{{name}}</span>
+				{{/if}}
+				{{#if isLeft num tag}}
+					<span style="color:blue;">{{name}}</span>
+				{{/if}}
+				{{#if isRight num tag}}
+					<span style="color:red;">{{name}}</span>
+				{{/if}}
+				<span class="mui-badge mui-badge-success">{{price}}</span>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+</template>

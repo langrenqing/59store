@@ -1,0 +1,19 @@
+= 59store数据分析
+
+== 注意
+由于数据库我没有上传，所以要运行起来是不可能的。
+
+== 实现
+* meteor and mysql
+* mui
+
+== 功能
+* 按城市统计学校、楼层及店铺
+* 按学校统计楼层及店铺
+* 店铺销售商品对比
+
+
+== 参考
+. http://www.59store.com/nightcat.html[59store]
+. https://github.com/nevill/zongji[mysql binglog 开启参考]
+. https://github.com/numtel/meteor-mysql[numtel:mysql]

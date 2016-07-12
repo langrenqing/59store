@@ -1,0 +1,18 @@
+<template name="dormentry">
+	<div id="dormentry" class="mui-page">
+        <div class="mui-page-content">
+		<ul class="mui-table-view">
+			{{#each list}}
+			<li class="mui-table-view-cell">
+			<div class="mui-table-cell mui-col-xs-10">
+				<h4 class="mui-ellipsis-2"><a href="{{pathFor route='shop'}}" id="{{id}}">{{name}}</a></h4>
+				<p class="mui-h6 mui-ellipsis">
+				店铺：<span class="mui-tab-label">{{shopNum}}</span>
+				</p>
+			</div>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+</template>

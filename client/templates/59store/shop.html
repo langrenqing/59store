@@ -1,0 +1,23 @@
+<template name="shop">
+	<div id="shop" class="mui-page">
+        <div class="mui-page-content">
+		<ul class="mui-table-view">
+			{{#each list}}
+			<li class="mui-table-view-cell">
+			<div class="">
+				<h4 class="">
+					<a href="{{pathFor route='item'}}" id="{{id}}">{{name}}</a>
+					<button type="button" class="mui-btn mui-btn-warning" id="toCompare" style="float:right;">对比</button>
+				</h4>
+				<p class="mui-h6 mui-ellipsis">
+				地址：<span class="mui-tab-label">{{shop_address}}</span>
+				店长：<span class="mui-tab-label">{{dorm_name}}</span>
+				商品：<span class="mui-tab-label">{{item_num}}</span>
+				</p>
+			</div>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+</template>

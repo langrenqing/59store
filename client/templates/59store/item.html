@@ -1,0 +1,13 @@
+<template name="item">
+	<div id="item" class="mui-page">
+        <div class="mui-page-content">
+		<ul class="mui-table-view">
+			{{#each list}}
+			<li class="mui-table-view-cell">{{name}}
+			<span class="mui-badge mui-badge-success">{{price}}</span>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
+</template>
